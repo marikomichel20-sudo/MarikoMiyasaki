@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mariko Miyasaki | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  />
+
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .section-title {
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mariko Miyasaki</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume">Résumé</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero bg-light">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-7">
+    
+          <h1>Hi, I'm Mariko.</h1>
+          <p class="lead mt-3">
+            Business student and sports partnerships professional with experience
+            working for the Smith Entertainment Group: Utah Jazz and Utah Mammoth.
+          </p>
+          <a href="#resume" class="btn btn-primary mt-3">View my résumé</a>
+        </div>
+        <div class="col-md-5 text-md-end">
+          <!-- Optional profile image -->
+          <img src="/Users/marikomiyasaki/Desktop/IMG_7067 (1).JPG" alt="" style="max-width: 300px;"
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Résumé -->
+  <section id="resume" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Résumé</h2>
+
+      <!-- Education -->
+      <div class="mb-4">
+        <h4>Education</h4>
+        <div>
+          <strong>Brigham Young University</strong> – BS, Business Management (in progress)<br />
+          Expected Graduation: 20XX<br />
+          Relevant Coursework: Finance, Information Systems, Business Intelligence
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div class="mb-4">
+        <h4>Experience</h4>
+
+        <div class="mb-3">
+          <strong>Corporate Partnerships Intern</strong> – Utah Jazz / Smith Entertainment Group<br />
+          <em>Salt Lake City, UT | 2022–Present</em>
+          <ul>
+            <li>Support partner activations at Delta Center including in-game promotions and hospitality events.</li>
+            <li>Plan and execute game night activations for clients and club spaces</li>
+            <li>Analyze impressions and engagement data to help demonstrate partnership ROI.</li>
+            <li>Assist VP and Directors with various projects throughout the season</li>
+          </ul>
+        </div>
+
+        <div class="mb-3">
+          <strong>Customer Service Specialist</strong> – Lifetime Gym<br />
+          <em>Provo, UT | 2021–2022</em>
+          <ul>
+            <li>Worked in the cafe and other areas in the facility to provice Lifetime members with a premium experience</li>
+            <li>Quickly earned full trust from management and members through excellent service</li>
+            <li>Made strong relationships with gym members and offered a raise within one month of starting</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="mb-4">
+        <h4>Skills</h4>
+        <ul>
+          <li>Tools: Excel, Tableau, SQL, VBA, PowerPoint, Google Workspace</li>
+          <li>Technical: Data visualization, financial modeling, basic web development (HTML/CSS/Bootstrap)</li>
+          <li>Professional: Client communication, event operations, project coordination, presentation design</li>
+        </ul>
+      </div>
+
+      <!-- Honors / Awards (optional) -->
+      <div class="mb-4">
+        <h4>Awards & Highlights</h4>
+        <ul>
+          <li>High academic performance across finance, IS, and EXDM coursework.</li>
+          <li>Trusted to support high-visibility partner events and hospitality experiences.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p>
+        This site includes a custom “scratch” page that demonstrates raw HTML, CSS, and
+        JavaScript skills, along with a small web app built in collaboration with AI.
+      </p>
+      <a class="btn btn-outline-primary" href="scratch.html" target="_blank">
+        View Scratch Page
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p>
+        Feel free to connect with me on LinkedIn.
+    
+  <a href="https://www.linkedin.com/in/mariko-miyasaki/" 
+   target="_blank"
+   style="
+     display: inline-block;
+     padding: 8px 14px;
+     background-color: #0a66c2;
+     color: white;
+     border-radius: 6px;
+     text-decoration: none;
+     font-weight: 600;
+   ">
+  Connect on LinkedIn
+</a>
+
+
+  <footer class="py-3 bg-dark text-light text-center">
+    <div class="container">
+      <small>© <span id="year"></span> Mariko Miyasaki</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
